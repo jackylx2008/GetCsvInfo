@@ -1,0 +1,24 @@
+# GetDwgInfo 配置文件
+
+# 日志配置
+log_level: INFO  # 日志级别: DEBUG, INFO, WARNING, ERROR, CRITICAL
+log_file: ./logs/app.log  # 日志文件路径
+
+# DWG 解析配置
+dwg:
+  extract_text: true  # 是否提取文本元素
+  extract_lines: true  # 是否提取线条元素
+  extract_rects: true  # 是否提取矩形元素
+  extract_circles: true  # 是否提取圆形元素
+
+# 数据分析配置
+analysis:
+  max_distance: 100.0  # 空间关系最大距离阈值（单位）
+  alignment_tolerance: 5.0  # 对齐容差（单位）
+
+# 输入/输出配置
+paths:
+  input_dir: ./input  # 输入文件目录
+  output_dir: ./output  # 输出文件目录
+  default_elements_file: elements.csv  # 默认元素数据文件名
+  default_relationships_file: relationships.csv  # 默认关系数据文件名
